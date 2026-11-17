@@ -1,0 +1,18 @@
+RADAR DE PRECIOS MX v2.0 — GUÍA RÁPIDA
+
+1. Extrae este ZIP.
+2. En tu repositorio de GitHub sube TODOS los archivos y carpetas de su contenido.
+   Deben aparecer en la raíz: app.py, requirements.txt, pyproject.toml, radar/, tests/, .streamlit/.
+3. Actualiza el deploy existente en Streamlit Cloud (archivo principal: app.py).
+   Recomendado: Python 3.12. No necesita claves ni secretos.
+4. En la barra lateral selecciona tiendas. Las consultas automáticas de Porrúa y
+   Gandhi son experimentales. Si la tienda bloquea acceso, el diagnóstico lo dirá.
+5. Prueba primero un ISBN con una URL directa de producto y una tienda activa.
+6. Resultados EXACT tienen código de producto confirmado. URL_ONLY y TITLE_MATCH
+   deben verificarse manualmente y NO entran en el precio mínimo confirmado.
+7. Para probar local: pip install -r requirements.txt; streamlit run app.py.
+8. Para pruebas: pip install -r requirements-dev.txt; pytest -q.
+
+LIMITACIÓN: sin contratos/API comerciales no existe garantía de extracción de precios
+para Amazon, Mercado Libre o Google Shopping. Los enlaces manuales sí se incluyen.
+Esta versión no utiliza servicios freemium ni créditos de prueba.
